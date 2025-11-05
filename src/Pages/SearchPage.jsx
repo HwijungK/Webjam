@@ -1,10 +1,14 @@
 import { useState } from 'react'
+import { useNavigate} from 'react-router-dom'
 
 
 function Form({height, weight, days, setHeight, setWeight, setDays}) {
+  const navigate = useNavigate()
+
   function handleSubmit(event) {
     event.preventDefault()
     console.log(height.toString() + weight.toString() + days.toString())
+    navigate("/Webjam/WorkoutPage")
   }
 
   return (
