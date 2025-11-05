@@ -1,6 +1,6 @@
 
 import './App.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import SearchPage from './Pages/SearchPage'
 import WorkoutPage from './Pages/WorkoutPage'
 
