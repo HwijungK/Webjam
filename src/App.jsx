@@ -1,47 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import SearchPage from './Pages/SearchPage'
+import WorkoutPage from './Pages/WorkoutPage'
 
-function Form({height, weight, days, setHeight, setWeight, setDays}) {
-  function handleSubmit(event) {
-    event.preventDefault()
-    console.log(height.toString() + weight.toString() + days.toString())
-  }
-
-  return (
-    <>
-      <h1>Welcome to Webjam</h1>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="height">Height</label> <br/>
-        <input type="number" id="height" name="height" value={height} onChange={(event) => {setHeight(event.target.value)}}></input> <br/>
-        <label htmlFor="weight">Weight</label> <br/>
-        <input type="number" id="weight" name="weight" value={weight} onChange={(event) => {setWeight(event.target.value)}}></input> <br/>
-        <label htmlFor="days">Days</label> <br/>
-        <input type="numbers" id="days" name="days" value={days} onChange={(event) => (setDays(event.target.value))}></input> <br/>
-
-        <button type="submit">Submit</button>
-      </form>
-    </>
-  )
-}
 
 function App() {
-  const [height, setHeight] = useState(72)
-  const [weight, setWeight] = useState(144)
-  const [days, setDays] = useState(3)
-
   return (
-    <>
-      <Form 
-        height={height}
-        weight={weight}
-        days={days}
-        setHeight={setHeight}
-        setWeight={setWeight}
-        setDays={setDays}
-      />
-    </>
+    <Router>
+      <Routes>
+        <Route index path="/Webjam" exact element={<SearchPage/>}/>
+        <Route path="/Webjam/WorkoutPage" exact element={<WorkoutPage />}></Route>
+      </Routes>
+    </Router>
   )
 }
 
