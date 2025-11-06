@@ -11,7 +11,7 @@ function Form({height, weight, days, setHeight, setWeight, setDays, onSwitchPage
 
   return (
     <>
-      <h1>Welcome to our Webjam</h1>
+      <h1>Anteater Gym Service</h1>
       <form onSubmit={handleSubmit}>
         <label htmlFor="height">Enter Your Height(in)</label> <br/>
         <input type="number" id="height" name="height" value={height} onChange={(event) => {setHeight(event.target.value)}}></input> <br/>
@@ -23,10 +23,6 @@ function Form({height, weight, days, setHeight, setWeight, setDays, onSwitchPage
       </form>
     </>
   )
-}
-
-function bmi(weight, height) {
-  return (weight / (height * height));
 }
 
 export default function SearchPage({height, weight, days, setHeight, setWeight, setDays, onSwitchPage}) {
