@@ -2,7 +2,6 @@
 import inclinedumbellpress from '../workoutPhotos/inclinedumbellpress.webp';
 
 export const exerciseDict = {
-<<<<<<< HEAD
     format: ["exercise name", "image source", "how to do workout (video link)", "equipment needed", "muscle group"],
 
     chest: {
@@ -65,12 +64,4 @@ export const exerciseDict = {
         cardio4: ["Jump Rope", "picture", "how to do workout", "jump rope", "cardio"],
         cardio5: ["Burpees", "picture", "how to do workout", "bodyweight", "cardio and full body"],
     }
-=======
-    chest: ["chest1", "chest2"],
-    arm: [],
-    leg: [],
-    back: [],
-    abs: [],
-    cardio: []
->>>>>>> 1734667 (did cards and stuff)
 }
