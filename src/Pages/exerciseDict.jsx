@@ -1,6 +1,5 @@
 export const exerciseDict = {
     chest: {
-        EXAMPLE_WORKOUT: ["workout_name","muscle_group_picture", "information_video", "equitment_used"], 
         chest1: ["Incline Dumbell Chest Press", "picture", "how to do workout", "dumbells"],
         chest2: ["Decline Dumbell Chest Press", "picture", "how to do workout", "dumbells"],
         chest3: ["Dumbell Chest Fly", "picture", "how to do workout", "dumbells"],
