@@ -1,5 +1,5 @@
 export const exerciseDict = {
-    chest: [],
+    chest: ["chest1", "chest2"],
     arm: [],
     leg: [],
     back: [],
