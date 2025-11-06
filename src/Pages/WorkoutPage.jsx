@@ -3,7 +3,7 @@ import {useState} from "react"
 
 export default function WorkoutPage({height, weight, days}) {
 
-    // Call Function
+    // Placeholder, Call function
     const [exercises, setExercises] = useState(
         [
             {
@@ -27,9 +27,9 @@ export default function WorkoutPage({height, weight, days}) {
             <div className="workout-container">
                 {exercises.map(e => {
                     return (
-                        <>
-                            <WorkoutCard exercise={e.exercise} target={e.target} reps={10} img_src={e.img_src}></WorkoutCard>
-                        </>
+                        
+                            <WorkoutCard key = {e.exercise} exercise={e.exercise} target={e.target} reps={10} img_src={e.img_src}></WorkoutCard>
+                        
                     )
                 })}
             </div>
