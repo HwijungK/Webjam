@@ -4,6 +4,7 @@ import './App.css'
 import SearchPage from './Pages/SearchPage'
 import WorkoutPage from './Pages/WorkoutPage'
 import {useState} from 'react'
+import { getWorkout } from './exercises'
 
 function App() {
 
@@ -11,6 +12,11 @@ function App() {
   const [weight, setWeight] = useState(144)
   const [days, setDays] = useState(3)
   const [isWorkoutPage, setIsWorkoutPage] = useState(false)
+
+  function onSwitchPage() {
+    
+    setIsWorkoutPage(true)
+  }
 
   return (
     <>
@@ -21,7 +27,7 @@ function App() {
       :<SearchPage
         height={height} weight={weight} days={days}
         setHeight={setHeight} setWeight={setWeight} setDays={setDays}
-        onSwitchPage={() => setIsWorkoutPage(true) }
+        onSwitchPage={onSwitchPage}
       ></SearchPage>}
       
     </>
