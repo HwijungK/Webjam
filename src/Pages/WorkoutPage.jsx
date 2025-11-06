@@ -3,7 +3,7 @@ import {useState} from "react"
 
 export default function WorkoutPage({height, weight, days}) {
 
-    // Call Function
+    // Placeholder, Call function
     const [exercises, setExercises] = useState(
         [
             {

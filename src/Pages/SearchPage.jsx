@@ -19,7 +19,6 @@ function Form({height, weight, days, setHeight, setWeight, setDays, onSwitchPage
         <input type="number" id="weight" name="weight" value={weight} onChange={(event) => {setWeight(event.target.value)}}></input> <br/>
         <label htmlFor="days">How Many Days Do You Want To Work Out?</label> <br/>
         <input type="numbers" id="days" name="days" value={days} onChange={(event) => (setDays(event.target.value))}></input> <br/>
-
         <button type="submit">Submit</button>
       </form>
     </>
