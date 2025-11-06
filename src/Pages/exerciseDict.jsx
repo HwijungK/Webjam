@@ -5,6 +5,7 @@ export const exerciseDict = {
     format: ["exercise name", "image source", "how to do workout (video link)", "equipment needed", "muscle group"],
 
     chest: {
+<<<<<<< HEAD
         chest1: ["Incline Dumbell Chest Press", inclinedumbellpress, "https://www.youtube.com/shorts/8fXfwG4ftaQ", "dumbells", "upper chest"],
         chest2: ["Decline Dumbell Chest Press", "picture", "how to do workout", "dumbells", "lower chest"],
         chest3: ["Dumbell Chest Fly", "picture", "how to do workout", "dumbells", "chest"],
@@ -15,6 +16,15 @@ export const exerciseDict = {
         chest8: ["Decline Push Ups", "picture", "how to do workout", "bodyweight", "lower chest"],
         chest9: ["Dumbell Pullover", "picture", "how to do workout", "dumbell", "chest and lats"]
     },
+=======
+        chest1: ["Incline Dumbell Chest Press", "picture", "how to do workout", "dumbells"],
+        chest2: ["Decline Dumbell Chest Press", "picture", "how to do workout", "dumbells"],
+        chest3: ["Dumbell Chest Fly", "picture", "how to do workout", "dumbells"],
+        chest4: ["Push Ups", "picture", "how to do workout", "bodyweight"], 
+        chest5: ["Cable Chest Fly", "picture", "how to do workout", "cable machine"],
+        chest6: ["Diamond Push Ups", "picture", "how to do workout", "bodyweight"]
+},
+>>>>>>> 10d04cc (chest pictures added)
     arm: {
         arm1: ["Bicep Curls", "picture", "how to do workout", "dumbells", "biceps"],
         arm2: ["Tricep Dips", "picture", "how to do workout", "bodyweight", "triceps"],
