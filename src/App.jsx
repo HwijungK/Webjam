@@ -3,13 +3,27 @@ import './App.css'
 // import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import SearchPage from './Pages/SearchPage'
 import WorkoutPage from './Pages/WorkoutPage'
-
+import {useState} from 'react'
 
 function App() {
+
+  const [height, setHeight] = useState(72)
+  const [weight, setWeight] = useState(144)
+  const [days, setDays] = useState(3)
+  const [isWorkoutPage, setIsWorkoutPage] = useState(false)
+
   return (
     <>
-      <h1>TEST</h1>
-      <WorkoutPage></WorkoutPage>
+      {isWorkoutPage? 
+      <WorkoutPage
+        height={height} weight={weight} days={days}
+      ></WorkoutPage>
+      :<SearchPage
+        height={height} weight={weight} days={days}
+        setHeight={setHeight} setWeight={setWeight} setDays={setDays}
+        onSwitchPage={() => setIsWorkoutPage(true) }
+      ></SearchPage>}
+      
     </>
     
     // <Router>

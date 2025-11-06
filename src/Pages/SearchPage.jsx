@@ -1,41 +1,36 @@
 import { useState } from 'react'
-import { useNavigate} from 'react-router-dom'
 
 
-function Form({height, weight, days, setHeight, setWeight, setDays}) {
-  const navigate = useNavigate()
+function Form({height, weight, days, setHeight, setWeight, setDays, onSwitchPage}) {
 
   function handleSubmit(event) {
     event.preventDefault()
     console.log(height.toString() + weight.toString() + days.toString())
-    navigate("/Webjam/WorkoutPage")
+    onSwitchPage(); 
   }
 
   return (
     <>
-      <h1>Welcome to Webjam</h1>
+      <h1>Welcome to our Webjam</h1>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="height">Height</label> <br/>
+        <label htmlFor="height">Enter Your Height(in)</label> <br/>
         <input type="number" id="height" name="height" value={height} onChange={(event) => {setHeight(event.target.value)}}></input> <br/>
-        <label htmlFor="weight">Weight</label> <br/>
+        <label htmlFor="weight">Enter Your Weight(lb)</label> <br/>
         <input type="number" id="weight" name="weight" value={weight} onChange={(event) => {setWeight(event.target.value)}}></input> <br/>
-        <label htmlFor="days">Days</label> <br/>
+        <label htmlFor="days">How Many Days Do You Want To Work Out?</label> <br/>
         <input type="numbers" id="days" name="days" value={days} onChange={(event) => (setDays(event.target.value))}></input> <br/>
 
-        <a href="/Webjam/WorkoutPage">
-            to workout
-        </a>
         <button type="submit">Submit</button>
       </form>
     </>
   )
 }
 
+bmi = (weight, height) => {
+    return (weight / (height * height));
+}
 
-export default function SearchPage() {
-    const [height, setHeight] = useState(72)
-    const [weight, setWeight] = useState(144)
-    const [days, setDays] = useState(3)
+export default function SearchPage({height, weight, days, setHeight, setWeight, setDays, onSwitchPage}) {
 
     return (
         <>
@@ -46,6 +41,7 @@ export default function SearchPage() {
             setHeight={setHeight}
             setWeight={setWeight}
             setDays={setDays}
+            onSwitchPage={onSwitchPage}
         />
         </>
     )
