@@ -14,7 +14,7 @@ export const exerciseDict = {
         chest7: ["Incline Push Ups", "picture", "how to do workout", "bodyweight", "upper chest"],
         chest8: ["Decline Push Ups", "picture", "how to do workout", "bodyweight", "lower chest"],
         chest9: ["Dumbell Pullover", "picture", "how to do workout", "dumbell", "chest and lats"]
-},
+    },
     arm: {
         arm1: ["Bicep Curls", "picture", "how to do workout", "dumbells", "biceps"],
         arm2: ["Tricep Dips", "picture", "how to do workout", "bodyweight", "triceps"],
