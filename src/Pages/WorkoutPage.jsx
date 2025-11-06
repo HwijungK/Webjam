@@ -51,15 +51,18 @@ export default function WorkoutPage({height, weight, days}) {
 }
 
 function DayContainer({dayName, exercises, target}) {
-    // exercises is a list of [name, image, video, equipment, muscle group]
+    // exercises is a list of lists[name, image, video, equipment, muscle group, sets, reps]
     console.log (exercises)
     
+
     return (
         <div>
             <h2>{dayName}</h2>
             <h3>{[...new Set(target)].join(", ")}</h3>
             {exercises.map((e) => {
-                return <WorkoutCard key = {e[0]} exercise={e[0]} target={e[4]} reps={10} img_src={e[1]} video={e[2]}></WorkoutCard>
+                
+                // console.log(`sets: ${e[8]}, reps: ${e[7]}`)
+                return <WorkoutCard key = {e[0]} exercise={e[0]} target={e[4]} img_src={e[1]} video={e[2]} reps={e[6]} sets={e[5]} ></WorkoutCard>
             })}
         </div>
         
@@ -67,13 +70,13 @@ function DayContainer({dayName, exercises, target}) {
 }
 
 // abs, arms, legs, chest, back, cardio
-function WorkoutCard({exercise, target, reps, img_src, video}) {
-
+function WorkoutCard({exercise, target, reps, sets, img_src, video}) {
+    
     return(
         <div className="workout-card">
             <h2>{exercise}</h2>
             <h3>Target: {target}</h3>
-            <h3>3 sets; {reps} reps</h3>
+            <h3>{sets} sets; {reps} reps</h3>
             <a href={video}>
                 <img src={img_src}></img>
             </a>

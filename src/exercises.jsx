@@ -64,7 +64,8 @@ export function getWorkout(height, weight, days) {
         collapsedTargetByDay[day].push(target)
         
         const exerciseToDo = exerciseDict[target][Object.keys(exerciseDict[target])[exerciseInTargetIndex]]
-        workout[day].push(exerciseToDo)
+        workout[day].push(exerciseToDo.slice().concat([baseSets, baseReps]))
+        // workout[day].push(exerciseToDo.slice().concat([1,2]))
       }
       
     }
