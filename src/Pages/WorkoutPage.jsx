@@ -13,10 +13,10 @@ export default function WorkoutPage({height, weight, days}) {
                 img_src:"https://m.media-amazon.com/images/I/61FTVcs11vL._AC_UF894,1000_QL80_.jpg"
             },
             {
-                exercise:chest1,
-                target:"chest",
-                muscles:"chestButMoreSpecific",
-                img_src: chest1[3]
+                exercise: exerciseDict.chest.chest1[0],
+                target: exerciseDict.chest.chest1[4],
+                muscles: exerciseDict.chest.chest1[3],
+                img_src: exerciseDict.chest.chest1[1]
             }
         ]
     )
