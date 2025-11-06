@@ -25,8 +25,8 @@ function Form({height, weight, days, setHeight, setWeight, setDays, onSwitchPage
   )
 }
 
-let bmi = (weight, height) => {
-    return (weight / (height * height));
+function bmi(weight, height) {
+  return (weight / (height * height));
 }
 
 export default function SearchPage({height, weight, days, setHeight, setWeight, setDays, onSwitchPage}) {

@@ -1,9 +1,13 @@
-//picture imports
-import inclinedumbellpress from '/src/assets/images/inclinedumbellpress.webp';
-
-
-//picture imports
-import inclinedumbellpress from '../workoutPhotos/inclinedumbellpress.webp';
+//picture imports for chest exercises
+//import inclinedumbellpress from '..Pages/workoutPhotos/inclinedumbellpress.png';
+//import declineumbellpress from <img src='..Pages/workoutPhotos/declinedumbellpress.png' alt="image" />;
+//import dumbellchestfly from '../workoutPhotos/dumbellchestfly.png';
+//import pushups from '../workoutPhotos/pushups.png';
+//import cablechestfly from '../workoutPhotos/cablechestfly.png';
+//import diamondpushups from '../workoutPhotos/diamondpushups.png';
+//import inclinepushups from '../workoutPhotos/inclinepushups.png';
+//import declinepushups from '../workoutPhotos/declinepushups.png';
+//import dumbellpullover from '../workoutPhotos/dumbellpullover.png';
 
 export const exerciseDict = {
     format: ["exercise name", "image source", "how to do workout (video link)", "equipment needed", "muscle group"],
