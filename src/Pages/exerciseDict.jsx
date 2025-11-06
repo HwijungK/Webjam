@@ -1,8 +1,8 @@
 export const exerciseDict = {
-    pullUps: {
-        target: "back"
-    },
-    chestPress: {
-        target: "chest"
-    }
+    chest: [],
+    arm: [],
+    leg: [],
+    back: [],
+    abs: [],
+    cardio: []
 }
