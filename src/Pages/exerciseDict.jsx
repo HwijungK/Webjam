@@ -1,5 +1,6 @@
 //picture imports
-import inclinedumbellpress from '../workoutPhotos/inclinedumbellpress.webp';
+import inclinedumbellpress from '/src/assets/images/inclinedumbellpress.webp';
+
 
 //picture imports
 import inclinedumbellpress from '../workoutPhotos/inclinedumbellpress.webp';
@@ -10,7 +11,7 @@ export const exerciseDict = {
     format: ["exercise name", "image source", "how to do workout (video link)", "equipment needed", "muscle group"],
 
     chest: {
-        chest1: ["Incline Dumbell Chest Press", inclinedumbellpress, "https://www.youtube.com/shorts/8fXfwG4ftaQ", "dumbells", "upper chest"],
+        chest1: ["Incline Dumbell Chest Press", {inclinedumbellpress}, "https://www.youtube.com/shorts/8fXfwG4ftaQ", "dumbells", "upper chest"],
         chest2: ["Decline Dumbell Chest Press", "picture", "how to do workout", "dumbells", "lower chest"],
         chest3: ["Dumbell Chest Fly", "picture", "how to do workout", "dumbells", "chest"],
         chest4: ["Push Ups", "picture", "how to do workout", "bodyweight", "chest"], 

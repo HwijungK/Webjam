@@ -25,7 +25,7 @@ function Form({height, weight, days, setHeight, setWeight, setDays, onSwitchPage
   )
 }
 
-bmi = (weight, height) => {
+let bmi = (weight, height) => {
     return (weight / (height * height));
 }
 
