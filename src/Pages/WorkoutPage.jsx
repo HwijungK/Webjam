@@ -13,26 +13,11 @@ const DAYS_OF_THE_WEEK = {
 }
 
 export default function WorkoutPage({height, weight, days}) {
+
     
-    // Placeholder, Call function
-    const [exercises, setExercises] = useState(
-        [
-            {
-                exercise:"curls",
-                target:"arms",
-                muscles:"biceps",
-                img_src:"https://m.media-amazon.com/images/I/61FTVcs11vL._AC_UF894,1000_QL80_.jpg"
-            },
-            {
-                exercise: exerciseDict.chest.chest1[0],
-                target: exerciseDict.chest.chest1[4],
-                muscles: exerciseDict.chest.chest1[3],
-                img_src: exerciseDict.chest.chest1[1]
-            }
-        ]
-    )
 
     const workoutReturnObject = getWorkout(height, weight, days)
+    console.log("workout: " + workoutReturnObject.workout)
     const workout = workoutReturnObject.workout
     const targetByDay = workoutReturnObject.target
 
@@ -52,13 +37,15 @@ export default function WorkoutPage({height, weight, days}) {
 
 function DayContainer({dayName, exercises, target}) {
     // exercises is a list of lists[name, image, video, equipment, muscle group, sets, reps]
-    console.log (exercises)
     
 
     return (
-        <div>
-            <h2>{dayName}</h2>
-            <h3>{[...new Set(target)].join(", ")}</h3>
+        <div className="day-container"> 
+            <div className="day-header">
+                <h2>{dayName}</h2>
+                <h3>{[...new Set(target)].join(", ")}</h3>
+            </div>
+            
             {exercises.map((e) => {
                 
                 // console.log(`sets: ${e[8]}, reps: ${e[7]}`)
@@ -77,9 +64,12 @@ function WorkoutCard({exercise, target, reps, sets, img_src, video}) {
             <h2>{exercise}</h2>
             <h3>Target: {target}</h3>
             <h3>{sets} sets; {reps} reps</h3>
-            <a href={video}>
-                <img src={img_src}></img>
-            </a>
+            <div className="img-container">
+                <a href={video}>
+                    <img src={img_src}></img>
+                </a>
+            </div>
+            
         </div>
     )
 }
