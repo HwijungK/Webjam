@@ -1,22 +1,11 @@
-//picture imports for chest exercises
-//import inclinedumbellpress from '..Pages/workoutPhotos/inclinedumbellpress.png';
-//import declineumbellpress from <img src='..Pages/workoutPhotos/declinedumbellpress.png' alt="image" />;
-//import dumbellchestfly from '../workoutPhotos/dumbellchestfly.png';
-//import pushups from '../workoutPhotos/pushups.png';
-//import cablechestfly from '../workoutPhotos/cablechestfly.png';
-//import diamondpushups from '../workoutPhotos/diamondpushups.png';
-//import inclinepushups from '../workoutPhotos/inclinepushups.png';
-//import declinepushups from '../workoutPhotos/declinepushups.png';
-//import dumbellpullover from '../workoutPhotos/dumbellpullover.png';
+
 
 export const exerciseDict = {
     format: ["exercise name", "image source", "how to do workout (video link)", "equipment needed", "muscle group"],
 
-    format: ["exercise name", "image source", "how to do workout (video link)", "equipment needed", "muscle group"],
-
     chest: {
-        chest1: ["Incline Dumbell Chest Press", {inclinedumbellpress}, "https://www.youtube.com/shorts/8fXfwG4ftaQ", "dumbells", "upper chest"],
-        chest2: ["Decline Dumbell Chest Press", "picture", "how to do workout", "dumbells", "lower chest"],
+        chest1: ["Incline Dumbell Chest Press", "https://cdn.shopify.com/s/files/1/1497/9682/files/2_2ede191f-4aa5-4b2e-81e7-e16850e948a4.jpg?v=1648826784", "https://www.youtube.com/shorts/8fXfwG4ftaQ", "dumbells", "upper chest"],
+        chest2: ["Decline Dumbell Chest Press", "https://liftmanual.com/wp-content/uploads/2023/04/dumbbell-decline-bench-press.jpg", "https://youtu.be/0xRvl4Qv3ZY?si=7TSaOGcXFOE3iy_c", "dumbells", "lower chest"],
         chest3: ["Dumbell Chest Fly", "picture", "how to do workout", "dumbells", "chest"],
         chest4: ["Push Ups", "picture", "how to do workout", "bodyweight", "chest"], 
         chest5: ["Cable Chest Fly", "picture", "how to do workout", "cable machine", "chest"],
