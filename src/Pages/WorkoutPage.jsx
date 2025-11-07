@@ -63,13 +63,12 @@ function WorkoutCard({exercise, target, reps, sets, img_src, video}) {
         <div className="workout-card">
             <h2>{exercise}</h2>
             <h3>Target: {target}</h3>
-            <h3>{sets} sets; {reps} reps</h3>
+            <h3>{sets} sets {"  "}|{"  "} {reps} reps</h3>
             <div className="img-container">
                 <a target="_blank" href={video}>
                     <img src={img_src}></img>
                 </a>
             </div>
-            
         </div>
     )
 }
