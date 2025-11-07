@@ -46,8 +46,27 @@ export function getWorkout(height, weight, days) {
       target_by_day[6] = ['leg']
       break;
     case 5:
-      break;
+      target_by_day[0] = ['arm']
+      target_by_day[2] = ['chest']
+      target_by_day[3] = ['back']
+      target_by_day[5] = ['leg', 'abs']
+      target_by_day[6] = ['cardio']
     case 6:
+      target_by_day[0] = ['arm']
+      target_by_day[1] = ['cardio']
+      target_by_day[3] = ['back']
+      target_by_day[4] = ['leg', 'abs']
+      target_by_day[6] = ['cardio']
+      target_by_day[5] = ['chest']
+      break;
+    case 7:
+      target_by_day[0] = ['arm']
+      target_by_day[1] = ['chest']
+      target_by_day[2] = ['cardio']
+      target_by_day[3] = ['leg']
+      target_by_day[4] = ['abs']
+      target_by_day[5] = ['back']
+      target_by_day[6] = ['cardio']
       break;
   }
   
