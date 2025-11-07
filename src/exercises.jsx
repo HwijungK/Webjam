@@ -26,13 +26,14 @@ export function getWorkout(height, weight, days) {
   }
 
   let target_by_day =[[],[],[],[],[],[],[]];
-  switch (days) {
+  switch (Number.parseInt(days)) {
     case 1:
       target_by_day[0] = ['chest', 'arm', 'leg','back','abs', 'cardio'];
       break;
     case 2:
       target_by_day[0] = ['chest', 'arm', 'back']
       target_by_day[3] = ['leg', 'abs']
+      console.log("Day is 2")
       break;
     case 3:
       target_by_day[0] = ['chest', 'arm', 'back']
