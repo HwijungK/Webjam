@@ -53,10 +53,9 @@ export const exerciseDict = {
         abs6: ["Sit Ups", "https://www.inspireusafoundation.org/file/2023/08/conventional-sit-up.gif", "https://www.youtube.com/watch?v=1fbU_MkV7NE", "bodyweight", "abs"],
     },
     cardio: {
-        cardio1: ["Running", "picture", "Work", "treadmill or outdoor", "cardio"],
-        cardio2: ["Cycling", "picture", "Work", "stationary bike or outdoor", "cardio"],
-        cardio3: ["Elliptical", "picture", "Work", "elliptical machine", "cardio"],
-        cardio4: ["Jump Rope", "picture", "Work", "jump rope", "cardio"],
-        cardio5: ["Burpees", "picture", "Work", "bodyweight", "cardio and full body"],
+        cardio1: ["Running", "https://fitnessprogramer.com/wp-content/uploads/2021/07/Run.gif", "https://youtu.be/_kGESn8ArrU?si=cdEwtAwUok10EZMf", "treadmill or outdoor", "cardio"],
+        cardio2: ["Cycling", "https://www.lyfta.app/thumbnails/21931201.jpg", "https://www.youtube.com/watch?v=4f3NymgxZwo", "stationary bike or outdoor", "cardio"],
+        cardio3: ["Elliptical", "https://www.inspireusafoundation.org/file/2021/08/elliptical-muscles.gif", "https://www.youtube.com/watch?v=r6HHJJXMmdU", "elliptical machine", "cardio"],
+        cardio4: ["Burpees", "https://www.inspireusafoundation.org/file/2022/01/burpee-movement.gif", "https://www.youtube.com/watch?v=JZQA08SlJnM", "bodyweight", "cardio and full body"],
     }
 }
