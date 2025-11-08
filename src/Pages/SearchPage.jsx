@@ -13,12 +13,23 @@ function Form({height, weight, days, setHeight, setWeight, setDays, onSwitchPage
     <>
       <h1>Anteater Gym Service</h1>
       <form onSubmit={handleSubmit}>
-        <label htmlFor="height">Enter Your Height(in)</label> <br/>
-        <input type="number" id="height" name="height" value={height} onChange={(event) => {setHeight(event.target.value)}}></input> <br/>
-        <label htmlFor="weight">Enter Your Weight(lb)</label> <br/>
-        <input type="number" id="weight" name="weight" value={weight} onChange={(event) => {setWeight(event.target.value)}}></input> <br/>
-        <label htmlFor="days">How Many Days Do You Want To Work Out?</label> <br/>
-        <input type="numbers" id="days" name="days" value={days} onChange={(event) => (setDays(event.target.value))}></input> <br/>
+        <div className="q-row">
+          <div className="q-element">
+            <label htmlFor="height">Enter Your Height(in)</label> <br/>
+            <input type="number" id="height" name="height" value={height} onChange={(event) => {setHeight(event.target.value)}}></input> <br/>
+          </div>
+          <div className="q-element">
+            <label htmlFor="weight">Enter Your Weight(lb)</label> <br/>
+            <input type="number" id="weight" name="weight" value={weight} onChange={(event) => {setWeight(event.target.value)}}></input> <br/>
+          </div>
+        </div>
+        <div className="q-row">
+          <div className = "q-element">
+  <         label htmlFor="days">How Many Days Do You Want To Work Out?</label> <br/>
+            <input type="numbers" id="days" name="days" value={days} onChange={(event) => (setDays(event.target.value))}></input> <br/>
+          </div>
+        </div>
+        
         <button type="submit">Submit</button>
       </form>
     </>

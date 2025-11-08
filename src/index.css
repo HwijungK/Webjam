@@ -79,18 +79,18 @@ button:focus-visible {
 .workout-container{
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 50px;
 }
 .workout-card {
-  background-color: rgb(255, 63, 63);
+  background-color: rgb(61, 55, 178);
   border-radius: 20px;
   width: 400px;
-  height: 500px;
+  height: 440px;
   padding: 20px;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   align-items: center;
 }
 .workout-card img{
@@ -100,9 +100,14 @@ button:focus-visible {
   object-fit: cover;
   object-position: center;
 }
+.workout-card h3{
+  padding: 0px;
+  margin: 0px;
+}
 .img-container {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 85%;
+  max-height: 85%;
+  margin-top: 40px;
   background-color: white;
   border-radius: 10px;
   aspect-ratio: 1;
@@ -110,4 +115,31 @@ button:focus-visible {
 }
 .img-container :hover {
   background-color: rgb(184, 163, 163)
+}
+
+/* Search */
+.q-row {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+  gap: 20%;
+}
+.q-row input{
+  font-size:1.6em;
+  
+}
+button {
+  background-color: #535bf2;
+  width: 190px;
+  height: 80px;
+  font-weight: 500;
+  font-size: 2em;
+  margin: 100px
+}
+
+h1 {
+  text-shadow: 2px 2px 4px #050616
 }
