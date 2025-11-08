@@ -79,6 +79,8 @@ export function getWorkout(height, weight, days) {
       const target = target_by_day[day][Math.floor(Math.random() * targetCount)]
       if (target_by_day[day].includes(target)) {
         target_by_day[day] = target_by_day[day].filter(t => t !== target);
+      } else {
+        continue;
       }
       
       if (target) {
