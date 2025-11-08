@@ -77,6 +77,9 @@ export function getWorkout(height, weight, days) {
     for (let e = 0; e < exersisesPerDay; e++) {
       const targetCount = target_by_day[day].length;
       const target = target_by_day[day][Math.floor(Math.random() * targetCount)]
+      if (target_by_day[day].includes(target)) {
+        target_by_day[day] = target_by_day[day].filter(t => t !== target);
+      }
       
       if (target) {
         const exerciseInTargetCount = Object.keys(exerciseDict[target]).length
